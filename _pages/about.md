@@ -2,24 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://vectorinstitute.ai/'>Vector Institute/University of Toronto</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>idris.yifeisun@gmail.com</p>
+    <p>Phone: 437-347-0631</p>
+    <p>Toronto, Canada</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: False # includes a list of news items
+selected_papers: False # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+##Hey, this is Yifei!
+I am an undergraduate student at the University of Toronto, studying computer science and mathematics. My academic journey initially began as a mathematics specialist in economics and finance, motivated by a naive idea taht this path would be financially rewarding and I took my first internship at an investment bank as an analyst. However, during my third year, I encountered the field of machine learning and became captivated by its potential.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+At that point, I struggled with the decision of whether to pivot completely. Fortunately, being surrounded by world-class researchers at the University of Toronto helped me make up my mind, and I decided to dive into the world of machine learning and artificial intelligence.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I worked as a machine learning stack engineer at Cerebras Systems, a company building state-of-the-art computer systems for complex AI and deep learning applications for my Professional Experience Year (PEY). I had the privilege of collaborating with a team of passionate architects focused on performance optimization. In Fall 2024, I began my first research project under the supervision of Professor [Ashton Anderson](https://www.cs.toronto.edu/~ashton/), where we utilize large language models for knowledge graph completion and logical reasoning tasks and submit my first paper to the Web Conference. Currently, I am working with Professor [Rahul G.Krishnan](https://www.cs.toronto.edu/~rahulgk/), focusing on evaluating and addressing distributional shifts in policy functions for optimal lab test ordering across hospitals.
+
+##What I do for fun
+I am a Go-player, I dreamt of being a professional Go-player when I was in primary school. I watched Alpha-Go's game with Lee Sedol and that might be my connection into artificial intelligence. Now I play on OGS[https://online-go.com/user/view/1113292] and Yehu during my free time.
