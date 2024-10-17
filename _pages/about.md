@@ -7,7 +7,7 @@ subtitle: <a href='https://vectorinstitute.ai/'>Vector Institute/University of T
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>idris.yifeisun@gmail.com</p>
     <p>Phone: 437-347-0631</p>
