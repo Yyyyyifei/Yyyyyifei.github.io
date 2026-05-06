@@ -16,6 +16,9 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     siteNav.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
+    navLinks.forEach((navLink) => {
+      navLink.classList.toggle("active", navLink === link);
+    });
   });
 });
 

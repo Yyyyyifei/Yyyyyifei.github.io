@@ -1,15 +1,15 @@
-# Academic Website
+# Yifei Sun Academic Website
 
-A clean, static academic website with sections for Home, Bio, News, Research Interests, and Publications.
+A polished static academic website with sections for Home, Publications, Research, News, and Bio.
 
 ## Edit Your Content
 
 Most personal content lives in `index.html`.
 
-- Replace `Your Name`, title, department, location, and contact links.
-- Update the Bio paragraphs.
-- Add or remove entries in the scrollable News section.
-- Replace the research interests and publication placeholders.
+- Update the opening bio, affiliation, location, and contact links.
+- Add or remove entries in the News section.
+- Add publications in the ordered list under `#publications`.
+- Replace `prof_pic.jpg` if you want a different profile photo.
 
 Design styles live in `styles.css`, and the small mobile menu / active navigation behavior lives in `script.js`.
 
@@ -27,20 +27,34 @@ Then visit `http://localhost:8000`.
 
 ## Publish on GitHub Pages
 
-Option 1: publish from the main branch.
+### Option 1: GitHub Actions
 
 1. Create a new GitHub repository, for example `academic-website`.
-2. Push this folder to GitHub.
-3. In the repository settings, go to Pages.
-4. Set the source to `Deploy from a branch`.
-5. Select the `main` branch and `/root` folder.
+2. Push this folder to the repository.
+3. In the repository settings, go to **Pages**.
+4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+5. Pushes to `main` will deploy automatically using `.github/workflows/pages.yml`.
 
-Option 2: use the included GitHub Actions workflow.
+### Option 2: Deploy From Branch
 
 1. Push this folder to GitHub.
-2. In repository settings, go to Pages.
-3. Set the source to `GitHub Actions`.
-4. Pushes to `main` will deploy automatically.
+2. In the repository settings, go to **Pages**.
+3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+4. Select the `main` branch and `/root` folder.
+5. Save, then wait for GitHub Pages to publish the site.
+
+## First Push Commands
+
+From this folder:
+
+```bash
+git init
+git add .
+git commit -m "Publish academic website"
+git branch -M main
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+git push -u origin main
+```
 
 ## Suggested Repository Name
 

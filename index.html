@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Academic website for Your Name, including biography, news, research interests, and publications."
+      content="Academic website for Yifei Sun, including biography, news, research interests, and publications."
     >
-    <title>Your Name | Academic Website</title>
+    <meta name="theme-color" content="#f6f7f2">
+    <title>Yifei Sun | Academic Website</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="#home" aria-label="Go to home">Your Name</a>
+      <a class="site-title" href="#home" aria-label="Go to home">Yifei Sun</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -20,52 +21,95 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
-        <a href="#bio">Bio</a>
-        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
         <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#bio">Bio</a>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">PhD Student / Researcher / Your Title</p>
-          <h1>Your Name</h1>
-          <p class="lead">
-            I work on machine learning, healthcare AI, and trustworthy data-driven systems.
-            Replace this sentence with a short statement about your research focus.
-          </p>
+          <p class="eyebrow">Machine learning for healthcare</p>
+          <h1>Yifei Sun</h1>
+          <p class="hero-subtitle">MSCS, Stanford University</p>
+          <div class="bio-content">
+            <p>
+              I am a Master's student in Computer Science at Stanford University.
+            </p>
+            <p>
+              I completed my undergraduate studies at University of Toronto.
+              I conducted research under <a href="https://www.cs.toronto.edu/~rahulgk/" target="_blank" rel="noreferrer">Prof. Rahul G. Krishnan</a> on healthcare AI, generalizable representation learning, and EHR data analysis;
+              with <a href="https://www.cs.toronto.edu/~sheila/" target="_blank" rel="noreferrer">Prof. Sheila McIlraith</a> on reinforcement learning;
+              and <a href="https://www.cs.toronto.edu/~ashton/" target="_blank" rel="noreferrer">Prof. Ashton Anderson</a> on knowledge graphs.
+            </p>
+            <p>
+              Previously, I spent a year at Cerebras Systems working on compilers as a stack engineer.
+              Before that, I interned at Cannacord Genuity.
+            </p>
+          </div>
           <div class="contact-row" aria-label="Contact links">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="mailto:yfsun@stanford.edu">Email</a>
+            <a href="https://scholar.google.com/citations?user=wFWKadwAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/yifei-idris-sun/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
         <aside class="profile-panel" aria-label="Profile summary">
-          <div class="avatar" aria-hidden="true">YN</div>
-          <p class="profile-name">Your Name</p>
-          <p class="profile-role">Department / Lab / University</p>
-          <p class="profile-location">City, Country</p>
+          <img class="avatar" src="prof_pic.jpg" alt="Yifei Sun">
+          <p class="profile-name">Yifei Sun</p>
+          <p class="profile-role">Stanford University</p>
+          <p class="profile-location">Palo Alto, USA</p>
         </aside>
       </section>
 
-      <section id="bio" class="section two-column">
-        <div>
-          <p class="section-label">Bio</p>
-          <h2>About Me</h2>
+      <section id="publications" class="section publications-section">
+        <div class="section-heading">
+          <p class="section-label">Publications</p>
+          <h2>Publications</h2>
         </div>
-        <div class="section-body">
-          <p>
-            I am a researcher interested in building reliable machine learning methods for
-            real-world scientific and clinical problems. My work combines modeling, representation
-            learning, and careful empirical evaluation.
-          </p>
-          <p>
-            Before this, I studied at University Name and worked on projects involving time-series
-            modeling, language models, and biomedical data. Update this section with your current
-            program, advisor, lab, and research story.
-          </p>
+        <ol class="publication-list">
+          <li>
+            <p class="paper-title">Can we generate portable representations for clinical time series data using LLMs?</p>
+            <p class="paper-meta">
+              Zongliang Ji<sup>*</sup>, <strong>Yifei Sun</strong><sup>*</sup>, Andre Amaral, Anna Goldenberg, Rahul G. Krishnan. <span class="paper-conference">The Fourteenth International Conference on Learning Representations (ICLR 2026).</span>
+            </p>
+            <p class="paper-links">
+              <a href="https://arxiv.org/abs/2603.23987" target="_blank" rel="noreferrer">PDF</a>
+            </p>
+          </li>
+          <li>
+            <p class="paper-title">Afriinstruct: Instruction tuning of african languages for diverse tasks</p>
+            <p class="paper-meta">
+              Kosei Uemura, Mahe Chen, Alex Pejovic, Chika Maduabuchi, <strong>Yifei Sun</strong>, En-Shiun Annie Lee. <span class="paper-conference">Findings of the Association for Computational Linguistics: EMNLP 2024, pp. 13571–13585.</span>
+            </p>
+            <p class="paper-links">
+              <a href="https://aclanthology.org/2024.findings-emnlp.793/" target="_blank" rel="noreferrer">PDF</a>
+            </p>
+          </li>
+        </ol>
+        <p class="publication-note"><sup>*</sup> Co-first author</p>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="section-heading">
+          <p class="section-label">Research</p>
+          <h2>Research Interests</h2>
+        </div>
+        <div class="interests-grid" aria-label="Research interests">
+          <div class="interest-item">
+            <h3>Machine Learning for Health</h3>
+            <p>Building models that reason over noisy, heterogeneous, and <strong>clinically meaningful</strong> data, with a focus on cross-domain generalization in healthcare settings.</p>
+          </div>
+          <div class="interest-item">
+            <h3>Clinical Foundation Models</h3>
+            <p>Developing robust <strong>foundation models</strong> for clinical data that support privacy-preserving, cross-institutional training and deployment.</p>
+          </div>
+          <div class="interest-item">
+            <h3>AI Measurement Science</h3>
+            <p>My latest research interests! Designing better ways to <strong>evaluate</strong> and <strong>measure</strong> AI performance in clinical applications.</p>
+          </div>
         </div>
       </section>
 
@@ -77,88 +121,51 @@
         <div class="news-box" tabindex="0" aria-label="Scrollable news updates">
           <article class="news-item">
             <time datetime="2026-05">May 2026</time>
-            <p>Started building my academic website.</p>
+            <p>Enjoy my summer!</p>
           </article>
           <article class="news-item">
             <time datetime="2026-04">April 2026</time>
-            <p>Paper title or project milestone goes here.</p>
+            <p>Attended ICLR 2026 in Rio de Janeiro.</p>
           </article>
           <article class="news-item">
             <time datetime="2026-03">March 2026</time>
-            <p>Presented recent work at a seminar, workshop, or lab meeting.</p>
-          </article>
-          <article class="news-item">
-            <time datetime="2026-02">February 2026</time>
-            <p>Released code, data, or a preprint for a research project.</p>
+            <p>Accepted to Stanford University MSCS program.</p>
           </article>
           <article class="news-item">
             <time datetime="2026-01">January 2026</time>
-            <p>Joined Lab Name at University Name.</p>
+            <p>First paper accepted to ICLR 2026.</p>
           </article>
           <article class="news-item">
-            <time datetime="2025-12">December 2025</time>
-            <p>Won an award, fellowship, or travel grant.</p>
+            <time datetime="2025-05">May 2025</time>
+            <p>Awarded the UTEA award under the supervision of <a href="https://www.cs.toronto.edu/~sheila/" target="_blank" rel="noreferrer">Prof. Sheila McIlraith</a>.</p>
           </article>
         </div>
       </section>
 
-      <section id="research" class="section research-section">
-        <div class="section-heading">
-          <p class="section-label">Research</p>
-          <h2>Research Interests</h2>
+      <section id="bio" class="section two-column">
+        <div>
+          <p class="section-label">Bio</p>
+          <h2>About Me</h2>
         </div>
-        <div class="interests-grid" aria-label="Research interests">
-          <div class="interest-item">
-            <h3>Machine Learning for Health</h3>
-            <p>Models that help reason over noisy, heterogeneous, and clinically meaningful data.</p>
-          </div>
-          <div class="interest-item">
-            <h3>Time-Series Representation Learning</h3>
-            <p>Learning robust patient, event, and signal representations from longitudinal records.</p>
-          </div>
-          <div class="interest-item">
-            <h3>Trustworthy AI</h3>
-            <p>Evaluation, interpretability, and reliability for models used in high-stakes settings.</p>
-          </div>
-        </div>
-
-        <div class="publications">
-          <h2>Publications</h2>
-          <ol class="publication-list">
-            <li>
-              <p class="paper-title">Paper Title Goes Here</p>
-              <p class="paper-meta">
-                <strong>Your Name</strong>, Coauthor One, Coauthor Two. Conference or Journal, 2026.
-              </p>
-              <p class="paper-links">
-                <a href="#" aria-label="Paper PDF placeholder">PDF</a>
-                <a href="#" aria-label="Code placeholder">Code</a>
-                <a href="#" aria-label="BibTeX placeholder">BibTeX</a>
-              </p>
-            </li>
-            <li>
-              <p class="paper-title">Another Paper Title Goes Here</p>
-              <p class="paper-meta">
-                <strong>Your Name</strong>, Coauthor Three, Coauthor Four. Workshop or Preprint, 2025.
-              </p>
-              <p class="paper-links">
-                <a href="#" aria-label="Paper PDF placeholder">PDF</a>
-                <a href="#" aria-label="Code placeholder">Code</a>
-              </p>
-            </li>
-            <li>
-              <p class="paper-title">Project or Manuscript in Preparation</p>
-              <p class="paper-meta">
-                <strong>Your Name</strong> and collaborators. Manuscript in preparation.
-              </p>
-            </li>
-          </ol>
+        <div class="section-body">
+          <p>
+            I made several pivots in my academic and professional journey.
+          </p>
+          <p>
+            <strong class="bio-label">Finance:</strong> I began in financial mathematics (MAEF at UofT), but my internship, even though it was a great experience, showed me I could pursue a different path.
+          </p>
+          <p>
+            <strong class="bio-label">SWE:</strong> I spent a rewarding year at Cerebras Systems working on compilers, yet the rapid rise of LLMs made me reconsider whether a traditional software engineering track was the future I wanted.
+          </p>
+          <p>
+            <strong class="bio-label">Research:</strong> I moved into research, and while the process has been challenging, it has been deeply inspiring to develop new methods and earn acceptance at top-tier venues. I am driven to contribute work that can make a real impact.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="current-year">2026</span> Your Name. Built with plain HTML, CSS, and JavaScript.</p>
+      <p>&copy; <span id="current-year">2026</span> Yifei Sun. Built with <a href="https://openai.com/blog/codex" target="_blank" rel="noreferrer">Codex</a>.</p>
     </footer>
 
     <script src="script.js"></script>
