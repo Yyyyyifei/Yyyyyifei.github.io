@@ -271,6 +271,7 @@ h3 {
 .profile-panel {
   position: relative;
   align-self: center;
+  width: min(100%, 310px);
   padding: 0.95rem;
   border: 1px solid rgba(216, 224, 218, 0.9);
   border-radius: 8px;
@@ -291,11 +292,14 @@ h3 {
 .avatar {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1.06;
+  aspect-ratio: 3 / 4;
   margin-bottom: 1rem;
+  border: 1px solid rgba(216, 224, 218, 0.95);
   border-radius: 7px;
+  background: var(--surface-soft);
   box-shadow: var(--shadow-soft);
   object-fit: cover;
+  object-position: center top;
 }
 
 .profile-name {
@@ -526,7 +530,7 @@ h3 {
   }
 
   .profile-panel {
-    max-width: 340px;
+    max-width: 320px;
   }
 
   .interests-grid {

@@ -19,7 +19,7 @@ This site presents my academic profile, research interests, recent updates, and 
 ├── index.html                  # Page content and section structure
 ├── styles.css                  # Visual design and responsive layout
 ├── script.js                   # Mobile navigation and active section state
-├── prof_pic.jpg                # Profile photo
+├── image.png                   # Profile photo
 ├── .nojekyll                   # Keeps GitHub Pages from applying Jekyll processing
 └── .github/workflows/pages.yml # GitHub Pages deployment workflow
 ```
