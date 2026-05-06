@@ -1,67 +1,76 @@
-# Yifei Sun Academic Website
+# Yifei Sun
 
-A polished static academic website with sections for Home, Publications, Research, News, and Bio.
+Personal academic website for Yifei Sun, built as a lightweight static site and hosted with GitHub Pages.
 
-## Edit Your Content
-
-Most personal content lives in `index.html`.
-
-- Update the opening bio, affiliation, location, and contact links.
-- Add or remove entries in the News section.
-- Add publications in the ordered list under `#publications`.
-- Replace `prof_pic.jpg` if you want a different profile photo.
-
-Design styles live in `styles.css`, and the small mobile menu / active navigation behavior lives in `script.js`.
-
-## Preview Locally
-
-Because this is a static site, you can open `index.html` directly in a browser.
-
-You can also run a tiny local server from this folder:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## Publish on GitHub Pages
-
-### Option 1: GitHub Actions
-
-1. Create a new GitHub repository, for example `academic-website`.
-2. Push this folder to the repository.
-3. In the repository settings, go to **Pages**.
-4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-5. Pushes to `main` will deploy automatically using `.github/workflows/pages.yml`.
-
-### Option 2: Deploy From Branch
-
-1. Push this folder to GitHub.
-2. In the repository settings, go to **Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Select the `main` branch and `/root` folder.
-5. Save, then wait for GitHub Pages to publish the site.
-
-## First Push Commands
-
-From this folder:
-
-```bash
-git init
-git add .
-git commit -m "Publish academic website"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git push -u origin main
-```
-
-## Suggested Repository Name
-
-For a personal site at `https://USERNAME.github.io`, name the repository:
+Live site:
 
 ```text
-USERNAME.github.io
+https://Yyyyyifei.github.io
 ```
 
-For a project-style site, any repository name is fine.
+## Overview
+
+This site presents my academic profile, research interests, recent updates, and publications. It is intentionally simple: plain HTML, CSS, and JavaScript, with no build step or package manager required.
+
+## Structure
+
+```text
+.
+├── index.html                  # Page content and section structure
+├── styles.css                  # Visual design and responsive layout
+├── script.js                   # Mobile navigation and active section state
+├── prof_pic.jpg                # Profile photo
+├── .nojekyll                   # Keeps GitHub Pages from applying Jekyll processing
+└── .github/workflows/pages.yml # GitHub Pages deployment workflow
+```
+
+## Local Preview
+
+Open `index.html` directly in a browser, or run a small local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+## Editing
+
+Most content updates happen in `index.html`:
+
+- Update the biography and contact links in the Home section.
+- Add news items under the `#news` section.
+- Add publications under the `#publications` section.
+- Edit research interests under the `#research` section.
+
+Design changes belong in `styles.css`. The only JavaScript behavior is the responsive navigation in `script.js`.
+
+## Deployment
+
+The site deploys through GitHub Actions whenever changes are pushed to `main`.
+
+GitHub Pages settings:
+
+```text
+Settings -> Pages -> Build and deployment -> Source -> GitHub Actions
+```
+
+To publish updates:
+
+```bash
+git add .
+git commit -m "Update website"
+git push
+```
+
+## Notes
+
+This repository is configured as a user GitHub Pages site. The repository name should remain:
+
+```text
+Yyyyyifei.github.io
+```
